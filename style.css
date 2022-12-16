@@ -4,17 +4,19 @@ html, body {
     margin: auto;
 }
 
-article p, h1 {
-    margin: 10px;
-    padding: 10px;
+article div {
+    padding: 15%;
 }
 
-article p span {
-    font-size: 85%;
+article h1 {
+    margin: 10px 10px 0px;
+    padding: 10px 10px 0 10px;
 }
 
-
-
+article p {
+    margin: 0 10px;
+    padding: 0 10px;
+}
 
 footer {
     background: gold;
@@ -36,6 +38,7 @@ section {
 }
 
 article {
+    text-align: center;
     background: white;
     float: left;
     width: 85%;
