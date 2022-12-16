@@ -2,26 +2,28 @@
 html, body {
     height: 100%;
     margin: auto;
+    /* background: black; */
+    color: white;
 }
 
 section {
-    background: blue;
+    background: black;
     height: 85%;
 }
 
 article {
     text-align: center;
-    background: white;
+    /* background: white; */
     float: left;
-    width: 85%;
+    width: 70%;
     height: 100%;
     position: relative;
+    display: table;
 }
 
 article div {
-    top: 50%;
-    left: 50%;
-    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 article h1 {
@@ -46,7 +48,20 @@ footer p {
 }
 
 nav {
+    width: 15%;
+    height: 100%;
+}
+
+.nav-right {
     background: red;
+    float: right;
+    width: 15%;
+    height: 100%;
+
+}
+
+.nav-left {
+    background: blue;
     float: left;
     width: 15%;
     height: 100%;
