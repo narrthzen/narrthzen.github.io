@@ -4,8 +4,24 @@ html, body {
     margin: auto;
 }
 
+section {
+    background: blue;
+    height: 85%;
+}
+
+article {
+    text-align: center;
+    background: white;
+    float: left;
+    width: 85%;
+    height: 100%;
+    position: relative;
+}
+
 article div {
-    padding: 15%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
 }
 
 article h1 {
@@ -24,26 +40,9 @@ footer {
     height: 5%;
 
 }
-
 footer p {
     font-size: 5%;
     text-align: center;
-}
-
-
-section {
-    background: blue;
-    height: 85%;
-
-}
-
-article {
-    text-align: center;
-    background: white;
-    float: left;
-    width: 85%;
-    height: 100%;
-
 }
 
 nav {
