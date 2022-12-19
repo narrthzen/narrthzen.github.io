@@ -43,6 +43,7 @@ footer {
 
 }
 footer p {
+    color: blue;
     font-size: 5%;
     text-align: center;
 }
@@ -57,7 +58,6 @@ nav {
     float: right;
     width: 15%;
     height: 100%;
-
 }
 
 .nav-left {
@@ -65,7 +65,14 @@ nav {
     float: left;
     width: 15%;
     height: 100%;
+}
 
+.nav-left p {
+    color: green;
+}
+
+.nav-right p {
+    color: yellow;
 }
 
 nav p {
@@ -83,6 +90,7 @@ header {
 }
 
 header p {
+    color: red;
     font-size: 5%;
     text-align: center;
 }
