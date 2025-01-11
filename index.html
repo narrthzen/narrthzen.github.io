@@ -1,32 +1,126 @@
-<!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Nathan Parraga Thiesen" />
-        <meta name="description" content="This is not a website." />
-        <link rel="stylesheet" href="style.css" />
-        <title>This is a title</title>
-    </head>
-    <body>
-        <footer>
-            <p>This is a footer</p>
-        </footer>
-        <section>
-            <nav class="nav-left">
-                <p>This is a nav</p>
-            </nav>
-            <article>
-                <div>
-                    <h1>Hello!</h1>
-                    <p>This is not a website.</p>
-                </div>
-            </article>
-            <nav class="nav-right">
-                <p>This is another nav</p>
-            </nav>
-        </section>
-        <header>
-            <p>This is a header</p>
-        </header>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/magick.min.css">
+    <title>iloveyounathan.club | Software Engineering Services</title>
+    <style>
+      header {
+          display: flex;
+          flex-direction: column;
+          margin-top: 0;
+          margin-bottom: 0;
+          align-content: center;
+          border-bottom: 1px solid white;
+          padding: 15px;
+          text-align: center;
+
+          h1 {
+              width: 100%;
+              padding: 0;
+              margin: 0;
+          }
+
+          h2 {
+              letter-spacing: 7px;
+              width: 100%;
+              margin: 0;
+          }
+
+          h3 {
+              letter-spacing: 8px;
+              width: 100%;
+              margin: 0;
+
+              &::before {
+                  content: "";
+              }
+          }
+      }
+
+      .me {
+          text-transform: lowercase;
+          justify-content: space-between;
+          align-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 50px;
+      }
+
+      .me > div {
+          flex: 1;
+          min-width: 250px;
+          margin: auto;
+      }
+
+      @media (max-width: 600px) {
+          .me {
+              flex-direction: column;
+          }
+      }
+
+      footer {
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+          header nav ul li img {
+              filter: invert(1);
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>iloveyounathan.club</h1>
+        <h2>Backend &middot; Frontend &middot; Cloud </h2>
+        <h3>Software Engineering Services</h3>
+      </header>
+      <section>
+        <div class="me">
+          <div>
+            <h4>Experience</h4>
+            <dl>
+              <dt>Previously at</dt>
+              <dd>
+                <ul>
+                  <li><a href="https://cargo.one">cargo.one</a> (Berlin, Germany)</li>
+                  <li><a href="https://chattermill.com">Chattermill</a> (Berlin, Germany)</li>
+                  <li><a href="https://marleyspoon.com">Marley Spoon</a> (Berlin, Germany)</li>
+                  <li><a href="https://zendesk.com">Zendesk</a> (Dublin, Ireland)</li>
+                  <li><a href="https://rdstation.com">RDStation</a> (Florianopolis, Brazil)</li>
+                </ul>
+              </dd>
+              <dd><a href="https://linkedin.com/in/nathanthiesen">...and more</a></dd>
+            </dl>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <form>
+              <label for="nameInput">Name:</label>
+              <input type="text" id="nameInput" name="name" placeholder="A. Stranger">
+              <label for="emailInput">Email:</label>
+              <input type="email" id="emailInput" name="email" placeholder="join@iloveyounathan.club">
+              <label for="messageTextarea">Message:</label>
+              <textarea id="messageTextarea" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="social">
+          <a href="#"><img loading="lazy" src="images/linkedin.svg" alt="linkedin"></a>
+          <a href="#"><img loading="lazy" src="images/github.svg" alt="github"></a>
+          <a href="#"><img loading="lazy" src="images/mastodon.svg" alt="mastodon"></a>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
