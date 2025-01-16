@@ -25,9 +25,16 @@
           }
 
           h2 {
-              letter-spacing: 7px;
               width: 100%;
               margin: 0;
+          }
+
+          #h2-services {
+              letter-spacing: 12.3px;
+          }
+
+          #h2-description {
+              letter-spacing: 12px;
           }
 
           h3 {
@@ -79,8 +86,8 @@
     <main>
       <header>
         <h1>iloveyounathan.club</h1>
-        <h2>Backend &middot; Frontend &middot; Cloud </h2>
-        <h3>Software Engineering Services</h3>
+        <h2 id="h2-services">AI &middot; Software &middot; Cloud </h2>
+        <h2 id="h2-description">Development Services</h2>
       </header>
       <section>
         <div class="me">
@@ -90,14 +97,14 @@
               <dt>Previously at</dt>
               <dd>
                 <ul>
-                  <li><a href="https://cargo.one">cargo.one</a> (Berlin, Germany)</li>
-                  <li><a href="https://chattermill.com">Chattermill</a> (Berlin, Germany)</li>
-                  <li><a href="https://marleyspoon.com">Marley Spoon</a> (Berlin, Germany)</li>
-                  <li><a href="https://zendesk.com">Zendesk</a> (Dublin, Ireland)</li>
-                  <li><a href="https://rdstation.com">RDStation</a> (Florianopolis, Brazil)</li>
+                  <li><a target="_blank" href="https://cargo.one">cargo.one</a> (Berlin, Germany)</li>
+                  <li><a target="_blank" href="https://chattermill.com">Chattermill</a> (Berlin, Germany)</li>
+                  <li><a target="_blank" href="https://marleyspoon.com">Marley Spoon</a> (Berlin, Germany)</li>
+                  <li><a target="_blank" href="https://zendesk.com">Zendesk</a> (Dublin, Ireland)</li>
+                  <li><a target="_blank" href="https://rdstation.com">RDStation</a> (Florianopolis, Brazil)</li>
                 </ul>
               </dd>
-              <dd><a href="https://linkedin.com/in/nathanthiesen">...and more</a></dd>
+              <dd><a target="_blank" href="https://linkedin.com/in/nathanthiesen">...and more</a></dd>
             </dl>
           </div>
           <div>
@@ -108,17 +115,21 @@
               <label for="emailInput">Email:</label>
               <input type="email" id="emailInput" name="email" placeholder="join@iloveyounathan.club">
               <label for="messageTextarea">Message:</label>
-              <textarea id="messageTextarea" name="message"></textarea>
-              <button type="submit">Submit</button>
+              <textarea rows=3 id="messageTextarea" name="message">
+                You probably saw this domain on my email, so you know how to contact me.
+
+                Otherwise, feel free to reach me on LinkedIn!
+              </textarea>
+              <button type="submit" disabled>Submit</button>
             </form>
           </div>
         </div>
       </section>
       <footer>
         <div class="social">
-          <a href="#"><img loading="lazy" src="images/linkedin.svg" alt="linkedin"></a>
-          <a href="#"><img loading="lazy" src="images/github.svg" alt="github"></a>
-          <a href="#"><img loading="lazy" src="images/mastodon.svg" alt="mastodon"></a>
+          <a target="_blank" href="https://linkedin.com/in/nathanthiesen"><img loading="lazy" src="images/linkedin.svg" alt="linkedin"></a>
+          <a target="_blank" href="https://github.com/narrthzen"><img loading="lazy" src="images/github.svg" alt="github"></a>
+          <!-- <a href="#"><img loading="lazy" src="images/mastodon.svg" alt="mastodon"></a> -->
         </div>
       </footer>
     </main>
