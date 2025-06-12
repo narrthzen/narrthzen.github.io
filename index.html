@@ -55,6 +55,51 @@
           display: flex;
           flex-wrap: wrap;
           gap: 50px;
+
+          a {
+              &:hover {
+                  filter: invert(32.1%);
+              }
+          }
+
+          .social {
+              /* flex-wrap: wrap; */
+              box-sizing: border-box;
+              padding: 50px;
+              gap: 5px;
+              align-items: flex-end;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              div {
+                  box-sizing: border-box;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 100%;
+                  border-color: #fffff;
+                  border-style: solid;
+                  border-width: 1px;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: row;
+
+                  a {
+                      box-sizing: border-box;
+                      margin: auto;
+                      display: flex;
+                      align-items: center;
+
+                      img {
+                          box-sizing: border-box;
+                          width: 25px;
+                          display: flex;
+                          align-items: center;
+                          margin: auto;
+                      }
+                  }
+              }
+          }
       }
 
       .me > div {
@@ -110,29 +155,16 @@
             </dl>
           </div>
           <div>
-            <h4>Contact</h4>
-            <form>
-              <label for="nameInput">Name:</label>
-              <input type="text" id="nameInput" name="name" placeholder="A. Stranger">
-              <label for="emailInput">Email:</label>
-              <input type="email" id="emailInput" name="email" placeholder="join@iloveyounathan.club">
-              <label for="messageTextarea">Message:</label>
-              <textarea rows=3 id="messageTextarea" name="message">
-                You probably saw this domain on my email, so you know how to contact me.
-
-                Otherwise, feel free to reach me on LinkedIn!
-              </textarea>
-              <button type="submit" disabled>Submit</button>
-            </form>
+            <div class="social">
+              <div><a target="_blank" href="https://linkedin.com/in/nathanthiesen"><img loading="lazy" src="images/linkedin.svg" alt="linkedin"></a></div>
+              <div><a target="_blank" href="https://github.com/narrthzen"><img loading="lazy" src="images/github.svg" alt="github"></a></div>
+              <!-- <a href="#"><img loading="lazy" src="images/mastodon.svg" alt="mastodon"></a> -->
+        </div>
           </div>
         </div>
       </section>
       <footer>
-        <div class="social">
-          <a target="_blank" href="https://linkedin.com/in/nathanthiesen"><img loading="lazy" src="images/linkedin.svg" alt="linkedin"></a>
-          <a target="_blank" href="https://github.com/narrthzen"><img loading="lazy" src="images/github.svg" alt="github"></a>
-          <!-- <a href="#"><img loading="lazy" src="images/mastodon.svg" alt="mastodon"></a> -->
-        </div>
+
       </footer>
     </main>
   </body>
